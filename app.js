@@ -7,11 +7,19 @@ function animateElement(element, start, target, duration){ //Retornará promesa 
       const loop = setInterval(()=>{ // toma una funcion y la repite cada ciertos milisegundos
           const current = start + counter++ * delta; //a acá indicamos el movimientoto, ++counter hace que sume y luego se multiplique. Counter ++ suma después. Formula = posición inicial + velocidad*tiempo
           element.style.top = element.style.bottom;
+          element.style.bottom = element.style.left;
+          element.style.left= element.style.top;
+          element.style.top = element.style.right;
           element.style.top= current;
+          element.style.buttom= current;
+          
           
           if(current >= target){ // acá indicamos cuando queremos que finalize el moviento que seria al llegar a target
               element.style.right = element.style.bottom;
-              element.style.top = current;
+              element.style.bottom = current;
+              
+       
+          
               clearInterval(loop); // Acá se termina la promesa
               resolve();//Si queremos pasar una respuesta es a través del parámetro de resolve
           }
