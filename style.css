@@ -1,0 +1,12 @@
+li{
+  position: absolute;
+}
+body{
+  background-image: url(img/img004.jpg);
+  background-position: center;
+  background-size:cover;
+}
+ h1{
+   color: white;
+   font-size: 70px;
+ }
