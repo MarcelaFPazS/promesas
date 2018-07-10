@@ -11,6 +11,14 @@ body{
    font-size: 70px;
  }
  .calamardo{
-   image-orientation: inherit;
+    
  }
-  
+ 
+ .bob{
+  width: 60%;
+  height: 30%;
+ }
+ .patricio{
+  width: 60%;
+  height: 30%;
+ }
